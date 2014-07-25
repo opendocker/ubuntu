@@ -15,3 +15,6 @@ ADD . /build
 RUN \
 	/build/install.sh && \
 	/build/cleanup.sh
+
+# Run python by default
+CMD ["/sbin/my_init", "--", "/bin/bash"]
